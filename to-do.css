@@ -1,0 +1,122 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', arial;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+.container{
+    width: 100vw;
+    min-height : 100vh;
+    padding: 10px;
+    /* background: linear-gradient(180deg, #153677, #4e085f); */
+    background: linear-gradient(180deg, #1536779a, #4e085f);
+}
+.todo-app, #list-container{
+    /* width: 100%; */
+    max-width: 500px;
+    background: whitesmoke;
+    margin: 20px auto;
+    padding: 30px;
+    border-radius: 10px;
+}
+
+#nav-btn >button{
+    position: relative;
+    left: 35%;
+    padding: 15px 25px;
+}
+#nav-btn >button:hover{
+    background: white;
+    color : purple;
+    font-weight: 900;
+}
+.todo-app h2{
+  color: #002765;
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.todo-app h2 img{
+    width: 25px;
+    height: 25px;
+    margin-left: 10px;
+    border-radius: 5px;
+}
+.row{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: wheat;
+    border-radius: 30px;
+    padding-left: 20px;
+    margin-bottom: 25px;
+}
+input{
+     flex: 1;  /*now it will take the full width */
+     border: none;
+     outline: none;
+     background: transparent;
+}
+button{
+     border: none;
+     outline: none; 
+     padding: 16px 50px;
+     background: #4e085fe3;
+     color: #fff;
+     font-size: 16px;
+     cursor: pointer;
+     border-radius: 40px;
+}
+ul li{
+    position: relative;
+    list-style: none;
+    font-size: 17px;
+    padding: 12px 8px 12px 50px;
+    user-select: none;
+    cursor: pointer;
+    background: rgba(128, 0, 128, 0.719);
+    border-radius: 20px;
+    margin-bottom: 5px;
+}
+ul li::before{
+    content: '';
+    position: absolute;
+    top : 7px;
+    left: 8px;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    background-image: url("todo-circle.png");
+    background-size: cover;
+    background-position: center;
+   
+}
+ul li.checked{
+    color: purple;
+    /* text-decoration: line-through; */
+}
+ul li.checked::before{
+     /* background-image: url("todo-circle.jpg"); */
+     background: orange;
+}
+ul li span{
+    position: absolute;
+    right: 15px;
+    top: 10px;
+    font-size: 22px;
+    border-radius: 50%;
+}
+ul li span:hover{
+    background: #4e085f81;
+}
+
+::-webkit-scrollbar{
+    background: transparent;
+    width: 10px;
+}
+::-webkit-scrollbar-thumb{
+    background: linear-gradient(#4e085fd2, #153677d2);
+    border-radius: 20px;
+    
+}

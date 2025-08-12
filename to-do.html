@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>To Do List</title>
+    <link rel="stylesheet" href="to-do.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="todo-app">
+        <h2>To-Do List <img src="todo.jpg" /></h2>
+        <div class="row">
+          <input type="text" id="input-box" placeholder="Add task" />
+          <button onclick="addTask()">Add</button>
+        </div>
+      </div>
+      <div id="nav-btn">
+        <button id="complete">COMPLETED</button>
+        <button id="uncomplete">Un-Completed</button>
+        <button id="all">ALL</button>
+      </div>
+      <ul id="list-container">
+        <!-- <li class="checked">Task 1</li>
+            <li>Task 2</li>
+            <li>Task 3</li> -->
+      </ul>
+    </div>
+
+    <script src="to-do.js"></script>
+    <!-- <script src="to-do1.js"></script> -->
+  </body>
+</html>
